@@ -1,6 +1,6 @@
 function TaskItem({ task }) {
     return (
-      <li className="task-item">
+      <li className={`task-card priority-${task.priority}`}>
         <span>{task.title}</span>
         <span> - {task.priority}</span>
       </li>
