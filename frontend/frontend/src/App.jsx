@@ -1,13 +1,14 @@
-  import tasks from "./tasks.json";
-  import TaskList from "./components/TaskList";
+import tasks from "./tasks.json";
+import TaskList from "./components/TaskList";
+import Header from "./components/Header";
 
-  function App() {
-    return (
-      <div className="app">
-        <h1>Student Assistant</h1>
-        <TaskList tasks={tasks} />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="app-container">
+      <Header taskCount={tasks.length} />
+      <TaskList tasks={tasks} />
+    </div>
+  );
+}
 
-  export default App;
+export default App;
